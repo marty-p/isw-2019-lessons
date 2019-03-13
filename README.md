@@ -12,7 +12,9 @@ https://az764295.vo.msecnd.net/stable/05f146c7a8f7f78e80261aa3b2a2e642586f9eb3/V
 
 ### bind python to vscode
 https://code.visualstudio.com/docs/languages/python
+
 https://code.visualstudio.com/docs/python/environments
+
 https://donjayamanne.github.io/pythonVSCodeDocs/docs/python-path/
 
 Extensions -> Python
