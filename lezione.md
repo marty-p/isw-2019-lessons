@@ -205,4 +205,7 @@ IndexError: list index out of range
 >>> lista5 = lista.copy()
 >>> lista5
 [1, 3, 4, 7, 12]
+>>> lista6 = [i for i in lista if i >5]
+>>> lista6
+[7, 12]
 ```
