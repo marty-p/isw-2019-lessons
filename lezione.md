@@ -124,4 +124,10 @@ True
 3
 ciao
 >>>
+>>> for i in range(0, len(lista)): print(lista[i])
+...
+1
+3
+3
+ciao
 ```
