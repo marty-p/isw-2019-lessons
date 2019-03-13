@@ -85,4 +85,8 @@ range(1, 5)
 'pyt'
 >>> stringa[1:]
 'ython'
+>>> a = 'b'
+>>> c = 'd'
+>>> a+c
+'bd'
 ```
