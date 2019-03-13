@@ -89,4 +89,8 @@ range(1, 5)
 >>> c = 'd'
 >>> a+c
 'bd'
+>>> stringa.capitalize()
+'Python'
+>>> stringa.count("yt")
+1
 ```
