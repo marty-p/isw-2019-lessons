@@ -139,6 +139,10 @@ ciao
 >>> lista2=[[1,2,3],['ciao',4]]
 >>> lista2[0][0]
 1
+>>> lista2[1][2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
 >>> lista2[1][1]
 4
 ```
