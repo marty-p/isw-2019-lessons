@@ -29,3 +29,4 @@ Extensions -> Python
 
 ### anaconda is enough on lab t pc
 https://www.anaconda.com/distribution/#download-section
+2gb of data but too slow 15min
