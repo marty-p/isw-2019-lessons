@@ -26,3 +26,6 @@ Extensions -> Python
     "python.pythonPath": "C:/Users/Studente/Downloads/python-3.7.2.post1-embed-win32/python.exe"
 }
 ```
+
+### anaconda is enough on lab t pc
+https://www.anaconda.com/distribution/#download-section
