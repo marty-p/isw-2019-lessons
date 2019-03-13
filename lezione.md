@@ -95,4 +95,6 @@ range(1, 5)
 1
 >>> stringa.capitalize().count("P")
 1
+>>> "qualcosa.csv".endswith(".csv")
+True
 ```
