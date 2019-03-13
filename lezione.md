@@ -97,4 +97,31 @@ range(1, 5)
 1
 >>> "qualcosa.csv".endswith(".csv")
 True
+>>> stringa.capitalize().index("P")
+0
+>>> stringa.isalpha()
+True
+>>> stringa.isdigit()
+False
+>>> stringa.islower()
+True
+>>> stringa.upper()
+'PYTHON'
+>>>
+>>> lista=[1,3,3,'ciao']
+>>> lista[0]
+1
+>>> lista[:2]
+[1, 3]
+>>> lista[-2:]
+[3, 'ciao']
+>>> lista[-1]
+'ciao'
+>>> for i in lista: print(i)
+...
+1
+3
+3
+ciao
+>>>
 ```
