@@ -146,4 +146,10 @@ Traceback (most recent call last):
 IndexError: list index out of range
 >>> lista2[1][1]
 4
+>>> lista3=[10,23,45]
+>>> for item in lista3:
+...     lista2.append(item)
+...
+>>> lista2
+[[1, 2, 3], ['ciao', 4], 10, 23, 45]
 ```
