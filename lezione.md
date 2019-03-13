@@ -152,4 +152,17 @@ IndexError: list index out of range
 ...
 >>> lista2
 [[1, 2, 3], ['ciao', 4], 10, 23, 45]
+>>> lista3.count(5)
+0
+>>> lista3.count(10)
+1
+>>> lista3.count([1,2,3])
+0
+>>> lista = [1,4,7,12,3]
+>>> lista.sort()
+>>> lista
+[1, 3, 4, 7, 12]
+>>> lista.sort(reverse=True)
+>>> lista
+[12, 7, 4, 3, 1]
 ```
