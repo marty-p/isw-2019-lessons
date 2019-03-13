@@ -93,4 +93,6 @@ range(1, 5)
 'Python'
 >>> stringa.count("yt")
 1
+>>> stringa.capitalize().count("P")
+1
 ```
