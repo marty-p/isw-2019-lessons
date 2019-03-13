@@ -72,7 +72,17 @@ range(1, 5)
 5
 7
 9
->>>
-
-
+>>> stringa="python"
+>>> stringa
+'python'
+>>> len(stringa)
+6
+>>> stringa[0]
+'p'
+>>> stringa[-1]
+'n'
+>>> stringa[:3]
+'pyt'
+>>> stringa[1:]
+'ython'
 ```
