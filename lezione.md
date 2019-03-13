@@ -159,10 +159,22 @@ IndexError: list index out of range
 >>> lista3.count([1,2,3])
 0
 >>> lista = [1,4,7,12,3]
+>>> lista
+[[1, 2, 3], ['ciao', 4], 10, 23]
+>>> lista.pop()
+23
+>>> lista
+[[1, 2, 3], ['ciao', 4], 10]
 >>> lista.sort()
 >>> lista
 [1, 3, 4, 7, 12]
 >>> lista.sort(reverse=True)
 >>> lista
 [12, 7, 4, 3, 1]
+>>> lista.reverse()
+>>> lista
+[1, 3, 4, 7, 12]
+>>> lista.clear()
+>>> lista
+[]
 ```
