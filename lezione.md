@@ -177,4 +177,21 @@ IndexError: list index out of range
 >>> lista.clear()
 >>> lista
 []
+>>> lista=[1, 3, 4, 7, 12]
+>>> min(lista)
+1
+>>> max(lista)
+12
+>>> len(lista)
+5
+>>> sum(lista)
+27
+>>> for i,v in enumerate(lista):
+...     print(i,v)
+...
+0 1
+1 3
+2 4
+3 7
+4 12
 ```
