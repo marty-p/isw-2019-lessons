@@ -133,7 +133,8 @@ ciao
 ```
 
 
-
+le stringhe sono immutabili
+le liste sono mutabili
 
 ```python
 >>> lista2=[[1,2,3],['ciao',4]]
