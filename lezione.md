@@ -194,4 +194,15 @@ IndexError: list index out of range
 2 4
 3 7
 4 12
+>>> lista=[]
+>>> lista2=[1, 3, 4, 7, 12]
+>>> lista+=lista2
+>>> lista
+[1, 3, 4, 7, 12]
+>>> lista4 = [i for i in lista]
+>>> lista4
+[1, 3, 4, 7, 12]
+>>> lista5 = lista.copy()
+>>> lista5
+[1, 3, 4, 7, 12]
 ```
