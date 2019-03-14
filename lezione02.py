@@ -41,6 +41,7 @@ print(a,b,c)
 a=[]
 for i in range(0, 10):
     a.append(i)
+
 #list comprension
 b=[i for i in range(0, 10)]
 print(a,b)
@@ -131,7 +132,7 @@ print(a)
 for k in a.keys(): print(k)
 
 #iterate only the values
-for k in a.values(): print(k)
+for v in a.values(): print(v)
 
 #iterate the items
 for i in a.items(): print(i)
