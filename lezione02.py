@@ -173,3 +173,10 @@ for i in range(0,4):
     print(i, end=' ')
 print('\n') #two end lines
 
+# empty loop - does nothing - not called
+for i in range(2,2):
+    print(i)
+
+
+
+
