@@ -154,7 +154,19 @@ print(res)
 for i,v in enumerate(names): print(i,v)
 
 
-
+###indentazioni
+# print tabellina dei numeri inferiori a 10
+lista=[2,4,12,10,4,5,34]
+for i in lista:
+    if i <= 10:
+        c=0
+        while c <= 10:
+            z = i*c
+            print("{} x {} = {}".format(i,c,z))
+            c+=1
+    else:
+        print('il numero trovato {} è maggiore a 10'.format(i))
+    print('*'*40)
 
 
 
