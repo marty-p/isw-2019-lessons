@@ -76,14 +76,40 @@ print(a)
 a={1,2,3,3,3,3,5,6,7}
 print(a)
 
+#add single element
 a.add(8)
 a.add(8)
 a.add(8)
 print(a)
 
+#add an array of elements
 a.update({8,8,8,8,9,9,9,9})
 print(a)
 
+#remove element 2 (not index 2)
+a.remove(2)
+print(a)
+
+#clear set
+a.clear()
+print(a)
+
+# set operations
+a=set('abracadabra')
+b=set('alacazam')
+print(a,b)
+
+# not included characters (difference)
+c=b-a
+print(c, a.difference(b))
+
+# merged characters (union)
+c=a|b
+print(c, a.union(b))
+
+# intersected characters (inersected)
+c=a&b
+print(c, a.intersection(b))
 
 
 
