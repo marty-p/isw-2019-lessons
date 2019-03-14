@@ -150,7 +150,8 @@ names=['guido', 'jacob', 'jack', 'james']
 res={j:scores[i] for i,j in enumerate(names)}
 print(res)
 
-
+# print index and values using enumerate
+for i,v in enumerate(names): print(i,v)
 
 
 
