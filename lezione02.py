@@ -72,7 +72,7 @@ a[0][1]=5 # OK
 a=1,2,3,4
 print(a)
 
-### sets (insiemi) unique and unordered
+### sets (insiemi) unique, mutable and unordered
 a={1,2,3,3,3,3,5,6,7}
 print(a)
 
@@ -114,5 +114,21 @@ print(c, a.intersection(b))
 # set comprensions
 c = {i for i in a if i not in b} #difference
 print(c)
+
+### dictionaries / dicts (dizionari) unordered, mutable and unique keys, couples of (keys, values)
+a={"a":1, "b":2, "c":3}
+print(a)
+print(a["a"])
+a["d"]=4
+a.update({"e":5, "f":6})
+print(a)
+
+#create from lists of (key, value)
+a=dict([('aaa',111),('bbb',222)])
+print(a)
+
+
+
+
 
 
