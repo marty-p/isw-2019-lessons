@@ -5,7 +5,7 @@ Spyder Editor
 This is a temporary script file.
 """
 
-
+### strings are immutable
 a="""  asd  """
 print("(%s)" % a.strip())
 
@@ -28,7 +28,7 @@ print(b, sum(b))
 #alt ways
 print(sum(map(int, a)))
 
-### liste
+### lists are mutable and ordered
 #by copy
 a=[1,2]
 b=list(a)
@@ -55,22 +55,36 @@ new_matrix = [[row[i] for row in matrix] for i in range(4)]
 print(new_matrix)
 
 
-### tuple
+### tuples are immutable but ordered
 a=(1,2,3,4)
 b=tuple([1,2,3,4])
 c=tuple("1234")
 print(a,b,c)
 
-#tuples are immutable
+#tuples' children can't be edited
 a[1]=5 # TypeError
 
-#but lists inside tuples are mutable
+#but lists inside tuples are mutable (sub-children)
 a=([1,2,3,4])
 a[0][1]=5 # OK
 
 # tuple packing
 a=1,2,3,4
 print(a)
+
+### sets (insiemi) unique and unordered
+a={1,2,3,3,3,3,5,6,7}
+print(a)
+
+a.add(8)
+a.add(8)
+a.add(8)
+print(a)
+
+a.update({8,8,8,8,9,9,9,9})
+print(a)
+
+
 
 
 
