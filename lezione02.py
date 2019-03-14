@@ -3,6 +3,8 @@
 Spyder Editor
 
 This is a temporary script file.
+
+Select the code you want to run and press F9.
 """
 
 ### strings are immutable
