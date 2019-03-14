@@ -177,6 +177,15 @@ print('\n') #two end lines
 for i in range(2,2):
     print(i)
 
+for x in range(2,4):
+    print(x)
+else: #else always executed at the end of the for loop, except in case break is used
+    print('else')
 
+for x in range(2,4):
+    print(x)
+    break
+else: #else always executed at the end of the for loop, except in case break is used
+    print('else')
 
 
