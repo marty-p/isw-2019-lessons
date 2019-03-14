@@ -55,8 +55,22 @@ new_matrix = [[row[i] for row in matrix] for i in range(4)]
 print(new_matrix)
 
 
+### tuple
+a=(1,2,3,4)
+b=tuple([1,2,3,4])
+c=tuple("1234")
+print(a,b,c)
 
+#tuples are immutable
+a[1]=5 # TypeError
 
+#but lists inside tuples are mutable
+a=([1,2,3,4])
+a[0][1]=5 # OK
+
+# tuple packing
+a=1,2,3,4
+print(a)
 
 
 
