@@ -33,4 +33,12 @@ c=a.copy()
 a[0]=3
 print(a,b,c)
 
+### range
+a=[]
+for i in range(0, 10):
+    a.append(i)
+
+b=[i for i in range(0, 10)]
+print(a,b)
+
 ```
