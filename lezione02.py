@@ -168,5 +168,8 @@ for i in lista:
         print('il numero trovato {} è maggiore a 10'.format(i))
     print('*'*40)
 
-
+# print end char edited
+for i in range(0,4):
+    print(i, end=' ')
+print('\n') #two end lines
 
