@@ -188,4 +188,11 @@ for x in range(2,4):
 else: #else always executed at the end of the for loop, except in case break is used
     print('else')
 
-
+#print prime numbers (for else; particular case not triggered by inloop break)
+for n in range(2,10):
+    for x in range(2,n):
+        if n % x == 0:
+            print('{} is not a prime number'.format(n))
+            break
+    else:
+        print('{} is a prime number'.format(n))
