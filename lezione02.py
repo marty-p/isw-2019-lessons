@@ -99,8 +99,8 @@ a=set('abracadabra')
 b=set('alacazam')
 print(a,b)
 
-# not included characters (difference)
-c=b-a
+# a characters included in b (difference)
+c=a-b
 print(c, a.difference(b))
 
 # merged characters (union)
@@ -111,6 +111,8 @@ print(c, a.union(b))
 c=a&b
 print(c, a.intersection(b))
 
-
+# set comprensions
+c = {i for i in a if i not in b} #difference
+print(c)
 
 
