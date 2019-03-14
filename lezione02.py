@@ -127,6 +127,30 @@ print(a)
 a=dict([('aaa',111),('bbb',222)])
 print(a)
 
+#iterate only the keys
+for k in a.keys(): print(k)
+
+#iterate only the values
+for k in a.values(): print(k)
+
+#iterate the items
+for i in a.items(): print(i)
+
+#delete an item returning it
+a.pop('bbb')
+print(a)
+#or (but ugly)
+del a['aaa']
+print(a)
+
+#dict comprension
+scores=[12,81,64,18]
+names=['guido', 'jacob', 'jack', 'james']
+res={j:scores[i] for i,j in enumerate(names)}
+print(res)
+
+
+
 
 
 
