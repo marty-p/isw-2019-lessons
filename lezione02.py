@@ -1,4 +1,3 @@
-```python
 # -*- coding: utf-8 -*-
 """
 Spyder Editor
@@ -16,17 +15,21 @@ print(a.split(","))
 for e in a.split(","):
     print(e)
 
+# get user input and split it by space
 a=input()
 for e in a.split():
     e = e.strip()
     print(e)
 
+# take a list of ints (as strings) and make a sum of it
 a=["12", "5454", "854"]
 b=[int(e.strip()) for e in a]
 print(b, sum(b))
+#alt ways
 print(sum(map(int, a)))
 
 ### liste
+#by copy
 a=[1,2]
 b=list(a)
 c=a.copy()
@@ -34,11 +37,26 @@ a[0]=3
 print(a,b,c)
 
 ### range
+#range
 a=[]
 for i in range(0, 10):
     a.append(i)
-
+#list comprension
 b=[i for i in range(0, 10)]
 print(a,b)
 
-```
+#make a list of different items between the two lists
+d = [[i,j] for i in [1,2,3] for j in [3,4,5] if i != j]
+print(d)
+
+#nested list comprensions (inverts rows with columns)
+matrix = [[1,2,3,4], [5,6,7,8], [9,10,11,12]]
+new_matrix = [[row[i] for row in matrix] for i in range(4)]
+print(new_matrix)
+
+
+
+
+
+
+
