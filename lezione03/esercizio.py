@@ -61,7 +61,7 @@ conta_lettere_input_2()
 def conta_lettere_input_3():
     print("inserisci una lista di stringhe:")
     stringhe = input()
-    stringa = ""
+    stringhe.strip()
     while len(stringhe):
         s = stringhe.find(" ")
         if (s==-1):
@@ -69,7 +69,7 @@ def conta_lettere_input_3():
             break
         else:
             print(conta_lettere(stringhe[:s-1]))
-            stringhe[s:]
+            stringhe = stringhe[s+1:]
 
 conta_lettere_input_3()
 
