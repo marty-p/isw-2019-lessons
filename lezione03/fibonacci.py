@@ -1,4 +1,3 @@
-### FUNZIONI
 def fibonacci(n):
     """Questa funzione calcola la serie di fibonacci fino al
        valore n inserito.
