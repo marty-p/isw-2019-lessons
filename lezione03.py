@@ -1,3 +1,4 @@
+### FUNZIONI
 def fibonacci(n):
     """Questa funzione calcola la serie di fibonacci fino al
        valore n inserito.
@@ -47,8 +48,16 @@ print(s_3)
 
 
 
+### SCOPE VARIABLES
+a= 13 # global var
+def niente(b):
+    c=b
+    d=a
+    return c,d
 
-
+def niente_2(b):
+    global c
+    return c
 
 
 
