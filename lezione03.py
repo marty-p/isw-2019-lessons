@@ -78,6 +78,15 @@ def printer(*args):
 printer('nicola', 'guido', 'elsa', 'jack', 'jacob')
 
 
+def somma(num_1, num_2, stringa):
+    if stringa == 'somma':
+        s = num_1 + num_2
+        print("La somma dei numeri inseriti è: {}.".format(s))
+    else:
+        print("non posso calcolare la somma")
+
+dict_args = {"num_1":3, "num_2":5, "stringa":"somma"}
+somma(**dict_args)
 
 
 
