@@ -15,6 +15,7 @@ def fibonacci(n):
         b,a=a,c
 
 res = fibonacci(15) # the def has no return, res is None
+print(res)
 
 def fibonacci_2(n):
     a,b=0,1
@@ -25,4 +26,5 @@ def fibonacci_2(n):
         b,a=a,c
     return fib
 
-res2 = fibonacci_2(n=15)
+res_2 = fibonacci_2(n=15)
+print(res_2)
