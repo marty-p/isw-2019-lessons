@@ -94,5 +94,13 @@ def printer_2(**args):
             print(args[key])
 printer_2(x=3, y=34, z=-2, t=8)
 
-
+def printer_3(nome, *args, **kwargs):
+    print("mi chiamo {}".format(nome))
+    print("\n")
+    for arg in args:
+        print(arg)
+    print("\n")
+    for key in kwargs:
+        print(kwargs[key])
+printer_3('nicola', 'guido', 'elsa', 'jack', x=3, y=-2, z=5)
 
