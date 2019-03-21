@@ -71,7 +71,11 @@ tupla = ("nicola", "uras", 26)
 presentazione(*tupla)
 
 
-
+def printer(*args):
+    for arg in args:
+        print(arg)
+        
+printer('nicola', 'guido', 'elsa', 'jack', 'jacob')
 
 
 
