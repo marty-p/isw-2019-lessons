@@ -14,10 +14,6 @@ def fibonacci(n):
         c = b+a
         b,a=a,c
 
-if __name__ = '__main__':
-    res = fibonacci(15) # the def has no return, res is None
-    print(res)
-
 def fibonacci_2(n):
     a,b=0,1
     fib=[]
@@ -27,6 +23,8 @@ def fibonacci_2(n):
         b,a=a,c
     return fib
 
-if __name__ = '__main__':
+if __name__ == '__main__':
+    res = fibonacci(15) # the def has no return, res is None
     res_2 = fibonacci_2(n=15)
+    print(res)
     print(res_2)
