@@ -56,4 +56,23 @@ conta_lettere_input_2()
 
 
 
+# metodo che prende una stringa che contiene tante lettere
+# selezioni la lettera, e conti le sue occorenze e ritorni (lettera, conto)
+def conta_lettere_input_3():
+    print("inserisci una lista di stringhe:")
+    stringhe = input()
+    stringa = ""
+    while len(stringhe):
+        s = stringhe.find(" ")
+        if (s==-1):
+            print(conta_lettere(stringhe))
+            break
+        else:
+            print(conta_lettere(stringhe[:s-1]))
+            stringhe[s:]
+
+conta_lettere_input_3()
+
+
+
 
