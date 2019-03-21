@@ -8,13 +8,13 @@ def fibonacci(n):
     Returns:
         None
     """
-    a,b=0
+    a,b=0,1
     while a < n:
         print(a, end=' ')
         c = b+a
         b,a=a,c
 
-res = fibonacci(15)
+res = fibonacci(15) # the def has no return, res is None
 
 def fibonacci_2(n):
     a,b=0,1
