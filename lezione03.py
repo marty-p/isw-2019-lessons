@@ -61,9 +61,14 @@ def niente_2(b):
 
 
 
+### KEYWORDS ARGUMENTS
+def presentazione(nome, cognome, eta):
+    print("ciao, sono {} {} e ho {} anni".format(nome, cognome, eta))
 
+presentazione("nicola", "uras", 26)
+tupla = ("nicola", "uras", 26)
 
-
+presentazione(*tupla)
 
 
 
