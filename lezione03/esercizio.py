@@ -9,7 +9,16 @@ Created on Thu Mar 21 10:26:45 2019
 # metodo che prende una stringa che contiene tante lettere
 # selezioni la lettera, e conti le sue occorenze e ritorni (lettera, conto)
 def conta_lettere(stringa):
-    #uniq = set(stringa)
+    uniq = set(stringa)
+    for let in uniq:
+        res.append((let, stringa.count(let)))
+    return res
+
+print(conta_lettere("aaabbbccccbbddd"))
+
+# metodo che prende una stringa che contiene tante lettere
+# selezioni la lettera, e conti le sue occorenze e ritorni (lettera, conto)
+def conta_lettere_2(stringa):
     uniq = []
     for let in stringa:
         if let not in uniq:
@@ -20,11 +29,10 @@ def conta_lettere(stringa):
         for c in stringa:
             if c == let:
                 cnt += 1
-        #res.append((let, stringa.count(let)))
         res.append((let, cnt))
     return res
 
-print(conta_lettere("aaabbbccccbbddd"))
+print(conta_lettere_2("aaabbbccccbbddd"))
 
 # metodo che prende una stringa che contiene tante lettere
 # selezioni la lettera, e conti le sue occorenze e ritorni (lettera, conto)
