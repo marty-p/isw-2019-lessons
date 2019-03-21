@@ -25,3 +25,33 @@ def conta_lettere(stringa):
     return res
 
 print(conta_lettere("aaabbbccccbbddd"))
+
+# metodo che prende una stringa che contiene tante lettere
+# selezioni la lettera, e conti le sue occorenze e ritorni (lettera, conto)
+def conta_lettere_input():
+    print("inserisci una lista di stringhe:")
+    stringhe = input()
+    for stringa in stringhe.split():
+        print(conta_lettere(stringa))
+
+conta_lettere_input()
+
+
+# metodo che prende una stringa che contiene tante lettere
+# selezioni la lettera, e conti le sue occorenze e ritorni (lettera, conto)
+def conta_lettere_input_2():
+    print("inserisci una lista di stringhe:")
+    stringhe = input()
+    stringa = ""
+    for let in stringhe:
+        if let == " ":
+            print(conta_lettere(stringa))
+            stringa = ""
+        else:
+            stringa += let
+
+conta_lettere_input_2()
+
+
+
+
