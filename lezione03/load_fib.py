@@ -1,11 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Mar 21 09:46:15 2019
-
-@author: Studente
-"""
-
 import fibonacci
-#from lezione03 import fibonacci
-#from lezione03 import fibonacci as fib
+#from fibonacci import fibonacci
+#from fibonacci import fibonacci as fib
 fibonacci.__name__
+__name__
+
+print(fibonacci.fibonacci_2(5))
