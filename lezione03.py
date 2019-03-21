@@ -89,7 +89,10 @@ dict_args = {"num_1":3, "num_2":5, "stringa":"somma"}
 somma(**dict_args)
 
 
-
+def printer_2(**args):
+    for key in args:
+            print(args[key])
+printer_2(x=3, y=34, z=-2, t=8)
 
 
 
