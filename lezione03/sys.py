@@ -10,5 +10,10 @@ print(sys.path)
 sys.path.insert(0, '.')
 print(sys.path)
 
-import __builtin__ as bt
-dir(bt)
+try:
+    import moduloAcaso
+except ModuleNotFoundError:
+    pass
+
+import builtins
+dir(builtins)
