@@ -39,3 +39,8 @@ print(birthday)
 
 age = today - birthday
 print(age)
+
+date_string = "2015-05-26"
+import datetime
+str_datetime = datetime.datetime.strptime(date_string, "%Y-%m-%d")
+print(str_datetime)
