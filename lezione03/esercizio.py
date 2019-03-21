@@ -49,6 +49,8 @@ def conta_lettere_input_2():
             stringa = ""
         else:
             stringa += let
+    if stringa:
+        print(conta_lettere(stringa))
 
 conta_lettere_input_2()
 
