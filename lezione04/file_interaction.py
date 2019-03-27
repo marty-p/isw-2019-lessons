@@ -82,5 +82,6 @@ c2=[]
 with open("esercizio4file.txt", "w+") as f1:
     f1.writelines(c1)
     f1.seek(0)
-    c2 = [[line] for line in f1.readlines()]
+    c2 = [[line.strip()] for line in f1.readlines()]
 print(c2)
+
