@@ -37,3 +37,38 @@ while True:
         else:
             print('attento, stai dividendo per zero')
 
+# else clause in try except block, useful when try clause doesn't raise an except
+while True:
+    try:
+        x = int(input("please enter a number: "))
+    except ValueError:
+        print("no valid input")
+    else:
+        print("nessun errore generato")
+        break
+
+# finally always run
+while True:
+    try:
+        x = int(input("please enter a number: "))
+        break
+    except ValueError:
+        print("no valid input")
+    else:
+        print("finally")
+
+# finally always run
+while True:
+    try:
+        x = int(input("please enter a number: "))
+        break
+    except:
+        raise ValueError("no valid digit")
+
+# esercizio: scrivere un programma che richieda di inserire un punto del piano
+# cartesiano, quindi l'utente deve inserire due numeri separati da uno spazio
+# o da una virgola. il punto verrà considerato solamente se appartenente al I
+# o al III quadrante. i punti già inseriti non devono essere considerati.
+# l'utente deve inserire numero non stringhe. il punto deve essere realmente un
+# punto del piano cartesiano (controllo sulla lunghezza dell'input inserito)
+#        
