@@ -25,6 +25,11 @@ with open("jsonfile.json", "r") as f:
     res = json.load(f)
     print(res)
 
+# save dict to json file
+with open("conf.json", "w") as f:
+    json.dump({"a":111, "b":222}, f)
+
 # useful to read config files with dicts
 with open("conf.json", "r") as f:
     conf = json.load(f)
+    print(conf)
