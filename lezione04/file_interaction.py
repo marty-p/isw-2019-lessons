@@ -21,7 +21,9 @@ f.close()
 # read content as a list
 with open("textfile.txt", "r") as f:
     contents = f.readlines()
+    print(contents)
 
 # read content as single str
 with open("textfile.txt", "r") as f:
     string = f.read()
+    print(string)
