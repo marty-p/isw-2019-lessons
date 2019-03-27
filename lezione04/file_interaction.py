@@ -64,7 +64,7 @@ c2=[]
 with open("esercizio4file.txt", "w") as f1:
     f1.writelines(c1)
 with open("esercizio4file.txt") as f1:
-    c2 = [line for line in f1.readlines()]
+    c2 = [[line.strip()] for line in f1.readlines()]
 print(c2)
 
 # v4
@@ -76,7 +76,7 @@ with open("esercizio4file.txt") as f1:
     c2 = [[line] for line in f1.readlines()]
 print(c2)
 
-# v5
+# v5 all in one with write update
 c1=["aaaaaaa\n", "bbbbbbb\n", "ccccccc\n", "ddddddd\n"]
 c2=[]
 with open("esercizio4file.txt", "w+") as f1:
@@ -85,3 +85,7 @@ with open("esercizio4file.txt", "w+") as f1:
     c2 = [[line.strip()] for line in f1.readlines()]
 print(c2)
 
+# v6 clear newline with strip and trigger a sublist with a trivial split
+contents=['hello world\n', 'this is a test\n', 'to write new lines\n', 'new line']
+res = [i.strip("\n").split(",") for i in contents]
+print(res)
