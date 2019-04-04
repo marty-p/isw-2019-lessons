@@ -19,7 +19,7 @@ class Account():
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            self transactions.append('{} deposits {} - {}.'.format(self.name,amount,1))
+            self.transactions.append('{} deposits {} - {}.'.format(self.name,amount,1))
     
     def withdraw(self, amount):
         if amount > 0.:
