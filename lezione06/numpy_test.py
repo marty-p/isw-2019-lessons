@@ -28,6 +28,8 @@ product = numbers_array * numbers_2
 #returns a boolean array
 print(np.isin(numbers_array, numbers_2))
 
+# returns a boolean array
+# check nan presence
 array_2 = np.array([np.nan, 2,6,7, np.nan, 10, 8, np.nan])
 print(np.isnan(array_2))
 
