@@ -34,8 +34,7 @@ array_2 = np.array([np.nan, 2,6,7, np.nan, 10, 8, np.nan])
 print(np.isnan(array_2))
 
 # esercizio: sostituire gli np.nan con lo zero
-for i,item in enumerate(array_2):
-    if np.isnan(item):
-        array_2[i]=0
-    else:
-        
+for i,v in enumerate(array_2):
+    if np.isnan(v):
+        array_2[i] = 0
+#
