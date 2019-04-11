@@ -51,7 +51,7 @@ new_dataset = dataset.loc[dataset['Check'] == True, [col for in dataset.columns 
 new_dataset = dataset.loc[dataset['Check'] == True, :]
 
 data = pd.DataFrame({
-        ['Students':[
+        'Students':[
             'Joe',
             'Russel',
             'Craig',
@@ -72,7 +72,7 @@ data = pd.DataFrame({
                 37.6,
                 27.4,
         ]
-        ]})
+        })
 
 
 #grouping by students and taking average
