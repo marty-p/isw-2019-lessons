@@ -12,14 +12,37 @@ Created on Thu Apr 11 10:14:57 2019
 #3. poi creare un altro metodo
 #che aggiunge in maniera random dei np.nan nel numpy array
 
-class EsReader:
-    def __init__(filepath):
-        pass
+import pandas as pd
+import numpy as np
+import random
 
+class EsReader:
+    
+    def __init__(self, filename):
+        self.filename = filename
+        
+    def readData(self):
+        # read file
+        self.dataset = pd.read_csv(self.filename, sep=',')
+        # convert Close to close
+        self.dataset.columns = map(str.lower, self.dataset.columns)
+        # check if close exists
+        if 'close' in self.dataset:
+            self.closeSet = self.dataset['close'].values
+            return True
+        return False
+        
+    def addRandom(self):
+        randomSet = np.array(random.sample(range(100), 20))
+        self.closeSet = np.append(self.closeSet, randomSet)
 
 
 
 if __name__ == '__main__':
-    filepath = r"C:\Users\Studente\Desktop\isw\lezione06\BTC-USD.csv"
-    esReader = EsReader(filepath)
-    
+    filename = r"C:\Users\Studente\Desktop\isw\lezione06\BTC-USD.csv"
+    esReader = EsReader(filename)
+    esReader.readData()
+    print(esReader.dataset.columns)
+    print(esReader.closeSet)
+    esReader.addRandom()
+    print(esReader.closeSet)

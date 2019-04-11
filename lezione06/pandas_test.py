@@ -47,7 +47,7 @@ dataset['new_check'] = np.random.choice([True,False],dataset.shape[6])
 
 #dataset['Check'] =0
 #for i in range(0,dataset.shape[0])
-new_dataset = dataset.loc[dataset['Check'] == True, [col for in dataset.columns if xxx]]
+#new_dataset = dataset.loc[dataset['Check'] == True, [col for in dataset.columns if xxx]]
 new_dataset = dataset.loc[dataset['Check'] == True, :]
 
 data = pd.DataFrame({
