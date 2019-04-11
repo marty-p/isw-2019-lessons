@@ -37,4 +37,8 @@ print(np.isnan(array_2))
 for i,v in enumerate(array_2):
     if np.isnan(v):
         array_2[i] = 0
+# not work:
+for e in array_2:
+    if np.isnan(e):
+        e = np.nan
 #
